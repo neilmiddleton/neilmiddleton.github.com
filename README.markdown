@@ -1,1 +1,1 @@
-###This is the data for my programming blog
+###This is the data for my blog

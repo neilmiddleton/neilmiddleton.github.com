@@ -8,21 +8,21 @@ layout: nil
 <!-- http://coyled.com/atom.xml -->
 
   <channel>
-    <title>Agile Software Musings</title>
-    <link>http://gmoeck.github.com/</link>
+    <title>:neil_middleton</title>
+    <link>http://neilmiddleton.github.com/</link>
     <atom:link href="http://gmoeck.github.com/rss.xml" rel="self" type="application/rss+xml" />
-    <description>Agile Sofware Craftsman Blog</description>
-    <language>en-us</language>
+    <description></description>
+    <language>en-gb</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</lastBuildDate>
 
     {% for post in site.posts %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
-      <link>http://gmoeck.github.com{{ post.url }}</link>
+      <link>http://neilmiddleton.github.com{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
-      <author>gmoeck@gmail.com (Gregory Moeck)</author>
-      <guid>http://gmoeck.github.com{{ post.id }}</guid>
+      <author>neil.middleton@gmail.com (Neil Middleton)</author>
+      <guid>http://neilmiddleton.github.com{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
