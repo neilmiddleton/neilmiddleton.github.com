@@ -41,5 +41,5 @@ web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
 
 Commit, deploy, push, and you should start seeing Unicorn running in your logs, and a higher throughput as a result.
 
-[Heroku] http://www.heroku.com
-[Unicorn] http://unicorn.bogomips.org/
+[Heroku]: http://www.heroku.com
+[Unicorn]: http://unicorn.bogomips.org/
