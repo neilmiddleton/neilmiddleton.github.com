@@ -35,7 +35,6 @@ Note that you don't want to push the worker_processes too high or you'll start h
 Once you've done the above, you need to tell your Procfile how to spin up on Unicorn:
 
 {% highlight ruby %}
-worker_processes 4
 web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
 {% endhighlight %}
 
