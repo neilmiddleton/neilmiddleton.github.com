@@ -5,15 +5,15 @@ title: Getting more from your Heroku dynos
 
 #Getting more from your Heroku dynos
 
-If you're using Heroku these days, you're probably having a good look at the new Celador Cedar stack that was introduced in Beta a few months ago.  This new stack gives you much more control over what processes are running and how they run.
+If you're using [Heroku][] these days, you're probably having a good look at the new Celador Cedar stack that was introduced in Beta a few months ago.  This new stack gives you much more control over what processes are running and how they run.
 
 Whilst this might not give you any immediate obvious benefits, this does give you the ability to change from the default choice of Thin as your Rack server, to something else such as Unicorn.
 
-So, why should you bother?  Well, it's all about how the Dyno's on Heroku work and how you pay for them.
+So, why should you bother?  Well, it's all about how the Dyno's on [Heroku][] work and how you pay for them.
 
-In Heroku a dyno is a single process that is self contained.  This dyno can do whatever you like, but has a soft limit of 512Mb of memory.  When using Thin, this dyno will hammer away quite happily serving one request at a time.
+In [Heroku][] a dyno is a single process that is self contained.  This dyno can do whatever you like, but has a soft limit of 512Mb of memory.  When using Thin, this dyno will hammer away quite happily serving one request at a time.
 
-However, Unicorn works slightly differently.  Unicorn manages it's worker processes internally.  This means that you are able to have many Unicorn workers running within a single Unicorn process, which is how the Heroku dynos would see it.  Therefore, you could have four Unicorn processes running in one Heroku dyno.
+However, [Unicorn][] works slightly differently.  [Unicorn][] manages it's worker processes internally.  This means that you are able to have many Unicorn workers running within a single [Unicorn][] process, which is how the [Heroku][] dynos would see it.  Therefore, you could have four Unicorn processes running in one [Heroku][] dyno.
 
 In testing on a current application that we're building we're seeing around double the throughput on the same number of dynos.  Note that this testing is only on a pre-production environment and not one with real users.  Once we have more users we might be able to give some more accurate figures.
 
@@ -40,3 +40,6 @@ web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
 {% endhighlight %}
 
 Commit, deploy, push, and you should start seeing Unicorn running in your logs, and a higher throughput as a result.
+
+[Heroku] http://www.heroku.com
+[Unicorn] http://unicorn.bogomips.org/
