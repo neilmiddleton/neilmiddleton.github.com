@@ -4,7 +4,14 @@ title: neil_middleton
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h2>About</h2>
+  <p>I'm a professional web developer for the agency <a href="http://www.kyan.com">Kyan</a> based in the Guildford, England.  Ruby on Rails and Heroku are my weapon on choice and I happily use it daily. In the past I've worked on all sorts of things ranging from stuff for major car manufacturers through to brand sites for household names.</p>
+
+  <p>Unlike some developers, I want to make software work better for the people who use it. I like to solve actual problems for actual people.  More developers seem more interested in making their invisible-to-everyone-else code more beautiful.</p>
+
+  <p>I've got tons of experience in the web, remembering the deep dark days of before CSS.  You name it, I've probably seen it.</p>
+	
+  <h2>Articles</h2>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
