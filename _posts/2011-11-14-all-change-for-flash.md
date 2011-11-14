@@ -8,7 +8,7 @@ Over the last couple of weeks there's been some fairly dramatic things going on 
 
 So, what the hell is going on?  Well, it seems to me that the accountants and turned up and told Adobe that they need to make some changes to how things are operating.  Flash for mobile was never going swimmingly largely due to iOS, and the Flex SDK was pretty much a direct cost due to the fact that it was open source, and Adobe has to try and recover that cost from the sale of Flex tooling.
 
-We've not seen layoffs at Adobe on this scale since December 2008 so what's happened?
+We've not seen layoffs at Adobe on this scale since [December 2008](http://articles.sfgate.com/2008-12-04/business/17130674_1_adobe-systems-global-recession-software-companies) (and again in [November 2009](http://techcrunch.com/2009/11/10/layoffs-reported-at-adobe/)) so what's happened?
 
 Well, in short, I think technologies been catching up.  Adobe, and Macromedia before them, have always pitched the Flash Platform as the way around the minefield of web browser compatability.  Flash was traditionally seen as the only way to get something to show in the same way in any browser, and the only way to overcome the shortcomings of JavaScript performance.  However, over the last few years, that field has changed entirely.  We're now looking at browsers that meet standards better than ever before, and JavaScript execution that's so fast the JavaScript engines are now being used to power all sorts of things.
 
