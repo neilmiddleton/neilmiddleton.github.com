@@ -10,7 +10,7 @@ title: Hosting with Heroku
 
 This document is designed to help you get the most from Heroku as a hosting platform.  Due to the particulary good [Heroku documentation][heroku_docs] this is NOT designed to be a starters guide to Heroku, the Heroku documentation does much better than that.  This is designed for people who are already happy using Heroku and understand the basics and want to understand more or learn how to get more from the platform.
 
-This document only deals with the [Celdaon Cedar][cedar] stack, and primarily Rails and Rack, although a lot of it may well apply to the other technologies hosted by Heroku.
+This document only deals with the [Celadon Cedar][cedar] stack, and primarily Rails and Rack, although a lot of it may well apply to the other technologies hosted by Heroku.
 
 Note, that most of this information is taken either from the [Heroku documentation][heroku_docs] or through trial and error from the platform.  Therefore, please be careful when using advice given here, and always ensure you test first.
 
