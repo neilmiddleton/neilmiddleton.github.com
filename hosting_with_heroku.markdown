@@ -14,9 +14,21 @@ This document only deals with the [Celadon Cedar][cedar] stack, and primarily Ra
 
 Note, that most of this information is taken either from the [Heroku documentation][heroku_docs] or through trial and error from the platform.  Therefore, please be careful when using advice given here, and always ensure you test first.
 
+##Understanding the stack
+
+The Heroku platform consists of a number of varied elements, all responsible for individual things, a diagram of which can be seen [here](http://www.heroku.com/how/connect).
+
+At the front of the queue is the routing mesh.  This is responsible for a couple of things.  Primarily it is responsible for taking a users request, and then passing that request onto another process (a dyno) that can handle it.  Once a response is received it will return the request back to the user (the time for this is seen in the logs as the `service` time).  The routing mesh also handles a couple of other tasks.  Firstly, it queues requests up for the dynos when they're busy (see `queue` in the logs), and protects the user from hung dynos by ensuring that requests complete within 30 seconds.  It a dyno doesn't respond within that 30 second window, the routing mesh will return an error.
+
+After the request has been routed the dynos kick in.  Dynos, which are essentially web processes in the dyno manifold, handle all the web requests that your application may receive.  These are directly similar to other concepts such as Passenger or Mongrels, but fully automated.  Dynos are moving around all the time, being idled and restarted, and you never seen any of it.  This is one of the primary reasons Heroku has it's read-only filesystem.  Aside from web requests the dyno manifold also runs your applications background processing, such as delayed_job workers, resque queues or scheduled tasks.
+
+Below the dynos is the logplex.  This is where all the stdout output from the dyno manifold arrives and is viewable with `heroku logs`.
+
+Outside of this platform are all the ancillaries that you can use.  For instance, Heroku run a series of shared database servers for your application to use, plus all the add-ons that you can use from various other providers.
+
 ##Performance & Scalability
 
-Performance and Heroku are one of the most commonly misunderstood areas of the platform and therefore one of the ones that are mis-managed more than others.
+Performance and Heroku are one of the most commonly misunderstood areas of the platform and therefore one of the ones that is mis-managed more than others.
 
 For starters, let's clarify the terms:
 
