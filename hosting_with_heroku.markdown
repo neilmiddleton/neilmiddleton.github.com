@@ -88,7 +88,9 @@ This document is licensed under Creative Commons.  Feel free to re-use non-comme
 
 If you spot any inaccuracies, or feel that something should be added/edited, please feel free to [fork the content on Github][] and send me a pull request.  I will then re-publish here on a needs basis.  I will be happy to add your name to the contributors list.
 
+##Contributors:
 
+[John Beynon](http://john.beynon.org.uk/)
 --- 
 ![](http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png "Creative Commons License")
 
