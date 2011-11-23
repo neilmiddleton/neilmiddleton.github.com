@@ -54,19 +54,19 @@ All of these points need addressing before performance of your application will 
 
 The single most important piece of advice for developing Heroku applications is to match the environment as close as possible.
 
-#Web Server
+###Web Server
 
 Coming soon...
 
-#Add Ons
+###Add Ons
 
 Coming soon...
 
-#Database
+###Database
 
-If you're going to be deploying to Heroku as 'default' as possible then Heroku will provide you with a shared PostgreSQL database. Whilst ActiveRecord should take care of a lot of the differences between the various databases if you go 'off the beaten track' and start using find_by_sql then you <strike>may</strike>will encounter problems. It may not be in your code but if you make use of Gems that have only considered sqlite or mySQL then you're going to encounter a problem. To minimise this request develop using PostgreSQL locally - it's an easy install via Homebrew or MacPorts.
+If you're going to be deploying to Heroku as 'default' as possible then Heroku will provide you with a shared PostgreSQL database. Whilst ActiveRecord should take care of a lot of the differences between the various databases if you go 'off the beaten track' and start using find_by_sql then you <strike>may</strike>will encounter problems. It may not be in your code but if you make use of Gems that have only considered sqlite or mySQL then you're going to encounter a problem. To minimise this risk develop using PostgreSQL locally - it's an easy install via Homebrew or MacPorts.
 
-#Environment Variables
+###Environment Variables
 
 Coming soon...
 
