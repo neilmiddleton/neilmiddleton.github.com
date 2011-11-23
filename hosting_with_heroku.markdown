@@ -50,6 +50,26 @@ Now, given that your dynos will run the code as fast as possible (given the hard
 
 All of these points need addressing before performance of your application will change.
 
+##Development
+
+The single most important piece of advice for developing Heroku applications is to match the environment as close as possible.
+
+#Web Server
+
+Coming soon...
+
+#Add Ons
+
+Coming soon...
+
+#Database
+
+If you're going to be deploying to Heroku as 'default' as possible then Heroku will provide you with a shared PostgreSQL database. Whilst ActiveRecord should take care of a lot of the differences between the various databases if you go 'off the beaten track' and start using find_by_sql then you <strike>may</strike>will encounter problems. It may not be in your code but if you make use of Gems that have only considered sqlite or mySQL then you're going to encounter a problem. To minimise this request develop using PostgreSQL locally - it's an easy install via Homebrew or MacPorts.
+
+#Environment Variables
+
+Coming soon...
+
 ##Deployment
 
 Coming soon...
