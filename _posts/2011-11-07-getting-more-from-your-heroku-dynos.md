@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting more from your Heroku dynos
+category: Heroku
 ---
 
 #Getting more from your Heroku dynos

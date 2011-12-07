@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Update To Heroku San Sanity
+category: Heroku
 ---
 #Update To Heroku San Sanity
 

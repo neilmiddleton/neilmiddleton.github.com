@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Heroku_san_sanity
+category: Heroku
 ---
 
 #Introducing Heroku_san_sanity

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deploying topic branches to Heroku
+category: Heroku
 ---
 #Deploying topic branches to Heroku
 

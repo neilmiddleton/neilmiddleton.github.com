@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Avoiding Zombie Dynos With Heroku
+category: Heroku
 ---
 #Avoiding Zombie Dynos With Heroku
 I’ve been looking at some long running processes on Heroku of recent and

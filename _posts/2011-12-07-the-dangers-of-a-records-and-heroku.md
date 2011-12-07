@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The dangers of A-records and Heroku
+categories: Heroku
 ---
 #The dangers of A-records and Heroku
 
