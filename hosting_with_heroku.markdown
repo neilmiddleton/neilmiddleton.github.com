@@ -5,6 +5,7 @@ title: Hosting with Heroku
 
 #Hosting with Heroku
 
+`This document should be considered as very much work in progress and currently incomplete.  Let's call it Alpha.`
 
 [Heroku][heroku] is a hosting platform based in the United States which I now use as the default choice for hosting all of my Rails and Rack applications wherever possible.
 
@@ -56,7 +57,7 @@ The single most important piece of advice for developing Heroku applications is 
 
 ###Web Server
 
-Coming soon...
+Generally speaking, from a web server point of view there's not a huge amount that you need to worry about here.  Using regular servers such as pow is just fine. However, if you're interested in getting a little more for your money, check out techniques such as [using unicorn](/getting-more-from-your-heroku-dynos/) and [foreman](http://devcenter.heroku.com/articles/procfile#developing_locally_with_foreman).
 
 ###Add Ons
 
@@ -64,11 +65,17 @@ Coming soon...
 
 ###Database
 
-If you're going to be deploying to Heroku as 'default' as possible then Heroku will provide you with a shared PostgreSQL database. Whilst ActiveRecord should take care of a lot of the differences between the various databases if you go 'off the beaten track' and start using find_by_sql then you <strike>may</strike>will encounter problems. It may not be in your code but if you make use of Gems that have only considered sqlite or mySQL then you're going to encounter a problem. To minimise this risk develop using PostgreSQL locally - it's an easy install via Homebrew or MacPorts.
+If you're going to be deploying to Heroku as 'default' as possible then Heroku will provide you with a shared PostgreSQL database. Whilst ActiveRecord should take care of a lot of the differences between the various databases if you go 'off the beaten track' and start using find_by_sql then you <strike>may</strike>will encounter problems. It may not be in your code but if you make use of Gems that have only considered sqlite or mySQL then you're going to encounter a problem. To minimise this risk develop using PostgreSQL locally - it's an easy install via [Homebrew](http://mxcl.github.com/homebrew/) or [MacPorts](http://www.macports.org/).
 
 ###Environment Variables
 
-Coming soon...
+Heroku makes a lot of use of envrionment variables, and so should you for storing any configuration that relates to an individual environment.  ENV vars are ideal for database credentials, API keys and the like.  They're environment specific and not checked into source control.
+
+But what about in development?  Well if you're using [Foreman](https://github.com/ddollar/foreman) or [Pow](http://pow.cx) you're in luck.  Foreman for starters will look for a .env file in the root of your project and load that first (the file needs to contain key=, value pairs) creating your environment.  Pow is a little different, allowing you to create a .powenv, or .powrc in the project root.  The .powrc is ripe for source control as the .powenv is loaded second which makes it ideal for individual developer configuration.  The only difference with these files is that you need to use a slightly different format, 
+
+`export ENV_VAR=ENV_VAR_VALUE`
+
+By using these methods you're able to effectively replicate your heroku environment as closely as possible, addons notwithstanding.
 
 ##Deployment
 
