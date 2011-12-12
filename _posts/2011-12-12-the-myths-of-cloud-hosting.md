@@ -13,6 +13,7 @@ So what are the problems that people have?  Well, heres the most common in FAQ f
 
 ---
 
+
 ## I don't want my sites to go down...
 
 This is by far the most common thing I've heard, that somehow once you host in the cloud and are no longer able to actually SSH into your servers you're somehow compromising on your hosting.  This is simply not true.
@@ -29,6 +30,7 @@ Now, there is an exception to this, namely those events when your application go
 
 ---
 
+
 ## I'm concerned about the privacy of my code and my data
 
 OK - this is a simple one.  All hosting companies stake their reputation on two things.  Reliability, and confidentiality.  If any hosting shop is found out that they are peeking into / sharing customers code and data, they might as well pack up shop and go home.  This is simply something that a company such as Heroku or others would even consider risking.  What's more, most of these companies have very strict processes in place to ensure that they don't even chance privacy breaches.  For instance, GMail support engineers will simply not look at any email, even if you give them explicit permission.  The chances are that if you're looking at a well known cloud hosting firm, that they will take privacy /very/ seriously.
@@ -43,6 +45,7 @@ See?  You're probably better off with the people [who do this stuff for a living
 
 ---
 
+
 ## I'm concerned about the cost
 
 Again, simple.
@@ -56,6 +59,7 @@ Now let's put this into Heroku money.  Your $3,800 will get you some dyno hours.
 However, there will be a tipping point.  There is a point with any project where the usage will get high enough that cloud hosting costs don't make sense.  If you're Facebook or Twitter you won't be looking at outsourcing your hosting, but then again, do you really think that the cost of hosting is a major concern for them?  Chances are, by the time the size of your hosting becomes a problem, cost won't be.
 
 ---
+
 
 ## What backups are available?
 
@@ -72,6 +76,7 @@ Most people are happy with daily backups, the paranoid go for hourly.  Only the 
 However, with backups, you should.  You should *always* worry about backups. If you're not [protecting yourself in at least some way](http://devcenter.heroku.com/articles/pgbackups), you're a fool.
 
 ---
+
 
 So, overall, I (obviously) think cloud hosting is the way forward.  I genuinely believe that I, as a developer or as someone who owns a development shop, should not have to worry about servers and hosting, but should be able to just throw their code at a partner and leave them to worry about it.  There are so many downsides to running your own hardware that they offset any upsides you might think of.  Granted cloud hosting does not suit everyone, but you'd have to be treading outside of the ordinary to not make it worthwhile.
 
