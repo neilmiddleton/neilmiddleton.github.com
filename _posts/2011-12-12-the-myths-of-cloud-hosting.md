@@ -11,9 +11,6 @@ However, it's clear to me as a developer that this is the wrong way to look at i
 
 So what are the problems that people have?  Well, heres the most common in FAQ form:
 
----
-
-
 ## I don't want my sites to go down...
 
 This is by far the most common thing I've heard, that somehow once you host in the cloud and are no longer able to actually SSH into your servers you're somehow compromising on your hosting.  This is simply not true.
@@ -28,9 +25,6 @@ With cloud hosting, it's somewhat different.  You know that by the time you beco
 
 Now, there is an exception to this, namely those events when your application goes down, but as that's not normally something that is affected by your hosting, I won't go into that here.
 
----
-
-
 ## I'm concerned about the privacy of my code and my data
 
 OK - this is a simple one.  All hosting companies stake their reputation on two things.  Reliability, and confidentiality.  If any hosting shop is found out that they are peeking into / sharing customers code and data, they might as well pack up shop and go home.  This is simply something that a company such as Heroku or others would even consider risking.  What's more, most of these companies have very strict processes in place to ensure that they don't even chance privacy breaches.  For instance, GMail support engineers will simply not look at any email, even if you give them explicit permission.  The chances are that if you're looking at a well known cloud hosting firm, that they will take privacy /very/ seriously.
@@ -43,9 +37,6 @@ Now, think back to the shop that is generating this code / data.  What are the c
 
 See?  You're probably better off with the people [who do this stuff for a living](http://policy.heroku.com/security).
 
----
-
-
 ## I'm concerned about the cost
 
 Again, simple.
@@ -57,9 +48,6 @@ So, even though these numbers are /extremely/ approximate, you're looking at $2,
 Now let's put this into Heroku money.  Your $3,800 will get you some dyno hours.  At $0.05c/hour it will get you a LOT of hours.  In fact, it will get you 76,000 dyno hours, or enough to run a single dyno for about eight years.  Granted a single dyno won't give you the same grunt, so let's say you're running two concurrently - that's four years worth, and so on.  What's more, you also have two or three hours a week of extra billable hours being generated because you're not having to support your own hardware.
 
 However, there will be a tipping point.  There is a point with any project where the usage will get high enough that cloud hosting costs don't make sense.  If you're Facebook or Twitter you won't be looking at outsourcing your hosting, but then again, do you really think that the cost of hosting is a major concern for them?  Chances are, by the time the size of your hosting becomes a problem, cost won't be.
-
----
-
 
 ## What backups are available?
 
