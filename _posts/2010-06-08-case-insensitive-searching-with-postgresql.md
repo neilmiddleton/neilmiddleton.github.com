@@ -13,14 +13,21 @@ it’s pretty straightforward.
 
 For instance, the case-sensitive code would be something like:
 
-{% highlight ruby %}
+{% highlight sql %}
 SELECT * FROM sometable WHERE textfield LIKE '%value%';
 {% endhighlight %}
 
 Whereas, to make it case-insensitive, try a bit of Borat:
 
-{% highlight ruby %}
+{% highlight sql %}
 SELECT * FROM sometable WHERE textfield ILIKE '%value%';
+{% endhighlight %}
+
+Alternatively, you can also use a tilde syntax:
+
+{% highlight sql %}
+SELECT * FROM sometable WHERE textfield ~ 'value'; -- case-sensitive search
+SELECT * FROM sometable WHERE textfield ~* 'value'; -- case-insensitive search
 {% endhighlight %}
 
 Job done.
