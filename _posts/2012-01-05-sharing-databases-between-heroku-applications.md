@@ -36,7 +36,7 @@ This will yield a whole load of settings, but in amongst them you'll
 see something like:
 
 {% highlight bash %}
-DATABASE_URL                 => postgres://sakldjsad:kajshdsajhdjsahd@ec2-107-20-155-141.compute-1.amazonaws.com/sakldjsad
+DATABASE_URL => postgres://sakldjsad:kajshdsa@ec2-107-20-155-141.compute-1.amazonaws.com/sakldjsad
 {% endhighlight %}
 
 This is the database connection string that your application will be
