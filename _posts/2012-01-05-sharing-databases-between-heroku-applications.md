@@ -1,5 +1,5 @@
 ---
-layout :post
+layout: post
 title: Sharing databases between Heroku applications
 category: Heroku
 ---
