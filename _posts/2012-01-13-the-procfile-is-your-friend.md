@@ -58,7 +58,9 @@ $ heroku ps:scale worker+1
 and so on.
 
 By declaring each process, and giving it a name, you're able to scale
-them individually from each other and even turn them off altogether.
+them individually from each other and even turn them off altogether. You
+may have traditional web processes, but you may also have workers, clock
+processes or more.  Anything goes here, it's purely up to you.
 
 ##Development
 
@@ -108,6 +110,8 @@ as are these:
 {% highlight bash %}
 redis: echo "port $PORT" | bin/redis-server -
 {% endhighlight %}
+
+
 
 {% highlight bash %}
 pg: bin/postmaster -p $PORT
