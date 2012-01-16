@@ -111,7 +111,7 @@ as are these:
 redis: echo "port $PORT" | bin/redis-server -
 {% endhighlight %}
 
-
+or
 
 {% highlight bash %}
 pg: bin/postmaster -p $PORT
