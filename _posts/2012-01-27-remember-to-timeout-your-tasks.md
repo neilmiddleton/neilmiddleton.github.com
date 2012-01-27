@@ -7,7 +7,7 @@ category: Heroku
 
 Time for a just-learned-from-experience post.
 
-On my employers website, kyan.com, we have a number of counters which can be found in the footer of every page.  These numbers include straight-forward things like the number of people that have registered on webmeetguildford.co.uk to more odd things such as the number of pixels that our designers have pushed.
+On my employers website, [kyan.com](http://kyan.com), we have a number of counters which can be found in the footer of every page.  These numbers include straight-forward things like the number of people that have registered on [webmeetguildford.co.uk](http://webmeetguildford.co.uk) to more odd things such as the number of pixels that our designers have pushed.
 
 Whilst you may think that these numbers are false, they are all actually based on real world counters (which may or may not be then massaged into something more entertaining).  For instance, the pixels counter has a look at how many design hours have been logged in our intranet and goes from there.
 
