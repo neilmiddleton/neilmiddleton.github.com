@@ -46,7 +46,7 @@ There's a few other minor thing missing, but this list should look
 pretty familiar to anyone who's setup a Unix web server.
 
 So, anyway.  Due to some unforseen problems (a few compatability issues
-and so on) the total time required to get the server buily was ranging
+and so on) the total time required to get the server built was ranging
 on a few hours.  OK, I'm no sys admin, but like I've said above, I've
 setup a few servers before and I'm a developer, not someone who worries
 about the plumbing.
