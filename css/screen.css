@@ -206,3 +206,10 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+
+blockquote {
+  border:1px solid #ddd;
+  background-color: #eee;
+  padding: 0 1em 0 1em;
+}
