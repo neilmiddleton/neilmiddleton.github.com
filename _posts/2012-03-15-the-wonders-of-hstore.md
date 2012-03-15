@@ -36,7 +36,7 @@ CREATE TABLE products (
 and we have a few products to put in there:
 
 {% highlight sql %}
-=>  INSERT INTO products (name, attributes)
+INSERT INTO products (name, attributes)
     VALUES (
       'Leica M9',
       'manufacturer  => Leica,
@@ -93,20 +93,18 @@ But what about using something like Rails to play with this stuff?  Well, you're
 You've now got the ability to do the above quite happily:
 
 {% highlight ruby %}
-  
-  Product.create(:name => "Bosch WAE28166GB Washing Machine", 
-  				 :attributes => {	'manufacturer' 	=> 'Bosch', 
-									'type' 			=> washing_machine, 
-									'capacity' 		=> '6kg',
-									'spinspeed'     => '1400rpm',
-       								'energyrating'  => 'A'+
-								})
+Product.create(	:name => "Bosch WAE28166GB Washing Machine", 
+  				:attributes => {'manufacturer' 	=> 'Bosch', 
+								'type' 			=> washing_machine, 
+								'capacity' 		=> '6kg',
+								'spinspeed'     => '1400rpm',
+       							'energyrating'  => 'A'+
+							   })
 
-  Product.where("attributes -> 'capacity' = '6kg'")
+Product.where("attributes -> 'capacity' = '6kg'")
 
-  Product.where("attributes -> 'type' = 'camera'")
-         .where("attributes -> 'megapixels' = '18'")
-
+Product.where("attributes -> 'type' = 'camera'")
+       .where("attributes -> 'megapixels' = '18'")
 {% endhighlight %}
 
 Simple.
