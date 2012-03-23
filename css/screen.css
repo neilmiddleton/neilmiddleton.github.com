@@ -91,7 +91,7 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 800px;
+  width: 960px;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -102,6 +102,16 @@ ul.posts {
   margin-bottom: 2em;
 }
 
+.left {
+  float: left;
+  width: 470px;
+  padding-left: 20px;
+}
+
+.right {
+  float: right;
+  width: 470px;
+}
   .site .title a {
     color: #a00;
     text-decoration: none;
