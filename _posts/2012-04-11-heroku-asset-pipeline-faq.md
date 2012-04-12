@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Heroku / Asset Pipeline FAQ
+category: Heroku
 ---
 #Heroku / Asset Pipeline FAQ
 
