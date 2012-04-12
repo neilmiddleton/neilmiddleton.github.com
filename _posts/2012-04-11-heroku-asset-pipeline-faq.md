@@ -69,7 +69,14 @@ By default, Rails will not let you serve every asset as a standalone file. There
 
 ##How can I get my assets onto a CDN such as S3 / CloudFront?
 
-Coming soon...
+The easy answer here is [`asset_sync`](https://github.com/rumblelabs/asset_sync) a gem available from [Rumble Labs](http://rumblelabs.com/) which deals with syncing your assets to S3 during the deploy process on Heroku.  This simple extends the regular assets precompilation with a sync of your assets.
+
+By using this, you can then hook up CloudFront to add a proper CDN to your S3 bucket.  Either way, you'll need to tell your Rails application where the new assets location is.  This is done with a simple config setting in your relevant environment:
+
+{% highlight ruby %}
+config.action_controller.asset_host = ENV["YOUR_S3_BUCKET"]
+config.action_mailer.asset_host = ENV["YOUR_S3_BUCKET"]
+{% endhighlight %}
 
 ###Updates
 
