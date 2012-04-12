@@ -78,6 +78,8 @@ config.action_controller.asset_host = ENV["YOUR_S3_BUCKET"]
 config.action_mailer.asset_host = ENV["YOUR_S3_BUCKET"]
 {% endhighlight %}
 
+Note, the mailer settings are for when you are pushing out email containing images and so on.  Those emails need your assets too!
+
 ###Updates
 
 This is a living article.  Over time I will add further information as I see the need.  In the meantime feel free to ask questions or add more information, or better still, [fork this document](https://github.com/neilmiddleton/neilmiddleton.github.com) and send me a pull request.
