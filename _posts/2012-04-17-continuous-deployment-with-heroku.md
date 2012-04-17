@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Continuous integration with Heroku
+title: Continuous deployment with Heroku
 category: Heroku
 ---
-#Continuous integration with Heroku
+#Continuous deployment with Heroku
 
 One of the current trends in the agile world is that of deploy soon, deploy fast and deploy
 often.  The idea here is that code should not be sitting still for long. 
