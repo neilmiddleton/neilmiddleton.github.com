@@ -88,14 +88,57 @@ ul.posts {
 /* Site
 /*
 /*****************************************************************************/
+  .site {
+    font-size: 110%;
+    text-align: justify;
+    width: 50em;
+    margin: 3em auto 2em auto;
+    line-height: 1.5em;
+  }
 
-.site {
-  font-size: 110%;
-  text-align: justify;
-  width: 960px;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
-}
+  @media (max-width: 800px) {
+   /* Smaller Resolution Desktops and Laptops */
+   .site {
+        font-size: 110%;
+        text-align: justify;
+        width: 40em;
+        margin: 3em auto 2em auto;
+        line-height: 1.5em;
+      }
+  }
+  @media (max-width: 570px) {
+    /* Smaller devices */
+    .site {
+        font-size: 110%;
+        text-align: justify;
+        width: 30em;
+        margin: 3em auto 2em auto;
+        line-height: 1.5em;
+      }
+  }
+  @media (max-width: 430px) {
+    /* Even Smaller devices */
+    .site {
+        text-align: left;
+        width: 20em;
+        margin: 3em auto 2em auto;
+        line-height: 1.5em;
+      }
+    .post_date {display: none;}
+    li {text-align: left;}
+  }
+  @media (max-width: 240px) {
+    /* Even Smaller devices */
+    .site {
+        text-align: left;
+        width: 15em;
+        margin: 1em auto 1em auto;
+        line-height: 1.5em;
+      }
+    .post_date {display: none;}
+    li {text-align: left;}
+  }
+
 
 .title {
   color: #a00;
