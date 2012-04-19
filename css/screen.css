@@ -17,7 +17,7 @@ html, body {
 
 body {
   background-color: white;
-  font: 13px helvetica, arial, clean, sans-serif;
+  font: 16px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
 }
@@ -25,6 +25,7 @@ body {
 h1 {
   font-size: 180%;
   display: inline;
+  text-align: left;
 }
 h2 {
   font-size: 150%;
@@ -91,7 +92,7 @@ ul.posts {
   .site {
     font-size: 110%;
     text-align: justify;
-    width: 50em;
+    width: 45em;
     margin: 3em auto 2em auto;
     line-height: 1.5em;
   }
@@ -101,7 +102,7 @@ ul.posts {
    .site {
         font-size: 110%;
         text-align: justify;
-        width: 40em;
+        width: 30em;
         margin: 3em auto 2em auto;
         line-height: 1.5em;
       }
@@ -111,7 +112,7 @@ ul.posts {
     .site {
         font-size: 110%;
         text-align: justify;
-        width: 30em;
+        width: 25em;
         margin: 3em auto 2em auto;
         line-height: 1.5em;
       }
@@ -120,7 +121,7 @@ ul.posts {
     /* Even Smaller devices */
     .site {
         text-align: left;
-        width: 20em;
+        width: 15em;
         margin: 3em auto 2em auto;
         line-height: 1.5em;
       }
@@ -213,8 +214,8 @@ ul.posts {
 /*****************************************************************************/
 
 #post {
-	font-size: 16px;
-	line-height: 29px;
+	font-size: 19px;
+	line-height: 35px;
 }
 
   /* standard */
