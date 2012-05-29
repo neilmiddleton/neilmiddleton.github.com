@@ -17,7 +17,7 @@ html, body {
 
 body {
   background-color: white;
-  font: 16px helvetica, arial, clean, sans-serif;
+  font: 14px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
 }
@@ -30,7 +30,7 @@ h1 {
 h2 {
   font-size: 150%;
 }
-h3 { 
+h3 {
   font-size: 110%;
 }
 h4, h5, h6 {
@@ -214,7 +214,7 @@ ul.posts {
 /*****************************************************************************/
 
 #post {
-	font-size: 19px;
+	font-size: 15px;
 	line-height: 35px;
 }
 
