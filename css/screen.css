@@ -268,3 +268,16 @@ blockquote {
   background-color: #eee;
   padding: 0 1em 0 1em;
 }
+
+.pagination {
+  font-size: 12px;
+}
+.pagination ul {
+  float: left;
+}
+
+.pagination ul li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
