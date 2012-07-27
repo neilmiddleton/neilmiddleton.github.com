@@ -3,7 +3,7 @@ layout: post
 title: Why only US-East?
 category: Heroku
 ---
-#Why only US-East?
+#Multi-provider PaaSes - what exactly do they offer?
 
 Recently there has been a vast array of Platform-as-a-service providers popping up all over the place offering a vast array of feature sets, and an even wider array of pricing strategies.
 
