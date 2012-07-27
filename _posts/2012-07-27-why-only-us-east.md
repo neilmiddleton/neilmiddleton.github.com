@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why only US-East?
+title: Multi-provider PaaSes - what exactly do they offer?
 category: Heroku
 ---
 #Multi-provider PaaSes - what exactly do they offer?
