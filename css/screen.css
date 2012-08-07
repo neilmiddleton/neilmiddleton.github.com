@@ -86,6 +86,12 @@ article > h1 {
   display:none;
 }
 
+article .highlight {
+  margin-bottom: 20px;
+  border: 1px dotted #AAA;
+  padding: 20px;
+}
+
 .content .listing li {
   list-style: none;
   border-bottom: 1px solid #eee;
