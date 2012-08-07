@@ -3,8 +3,6 @@ layout: post
 title: Heroku / Asset Pipeline FAQ
 category: Heroku
 ---
-#Heroku / Asset Pipeline FAQ
-
 From having a look around on Stackoverflow, it seems that a fair chunk of the questions on there all relate to the new Rails 3.1 Asset Pipeline, a part of Rails which has attracted a relatively large amount of comment and problems.
 
 For starters this article won't tell you how to get the Asset pipeline working perfectly locally - there's a bunch of [other](http://guides.rubyonrails.org/asset_pipeline.html) [documentation](http://guides.rubyonrails.org/asset_pipeline.html) out there which is much better than I anything I might try to do, so if you're having problems getting the Asset pipeline working in development, take a look there first.
@@ -17,7 +15,7 @@ Additionally, Heroku also have a stack of documentation dedicated to deploying R
 
 If these don't help, then read on.
 
-##So, what are the basic settings for deploying to Heroku?
+###So, what are the basic settings for deploying to Heroku?
 
 There are numerous ways to configure the Asset pipeline for Heroku, but here's a way that I know to work just fine:
 
@@ -41,7 +39,7 @@ config.action_dispatch.x_sendfile_header = nil
 
 If you're doing anything out of the ordinary this config might need some tweaking.  See the Rails guide for more information.
 
-##What do I put into source control?
+###What do I put into source control?
 
 Within your project you should have your raw assets (in `app/assets`) in source control.  When you locally precompile your assets this will generate a load of new asset files, and a `manifest.yml` file.  Do not put these into source control - Heroku does not need them.
 
@@ -51,9 +49,9 @@ If you push your own compiled assets into source control Heroku will recognise t
 
 Not adding pre-compiled assets to Git is especially important if you're using something like [Asset Sync](https://rubygems.org/gems/asset_sync).
 
-##My JavaScript / CSS isn't there
+###My JavaScript / CSS isn't there
 
-This could be caused by a couple of things.  Firstly, you might be using an asset host (check your config) that doesn't resolve, or something broke during the asset precompile in deployment.  To debug, manually run a 
+This could be caused by a couple of things.  Firstly, you might be using an asset host (check your config) that doesn't resolve, or something broke during the asset precompile in deployment.  To debug, manually run a
 
 {% highlight ruby %}
 heroku run rake assets:precompile
@@ -63,11 +61,11 @@ and see if your assets appear.  If so, then check your deploy output for message
 
 If you're still not seeing any assets, check your logs for clues on what might be going wrong.
 
-##Heroku is telling me file X isn't precompiled...
+###Heroku is telling me file X isn't precompiled...
 
 By default, Rails will not let you serve every asset as a standalone file. Therefore, if you're wanting to link to a specific JS file or similar, you need to add it to your `config.assets.precompile` array.  See [here for more information](/precompiling-non-default-assets-with-rails-3/).
 
-##How can I get my assets onto a CDN such as S3 / CloudFront?
+###How can I get my assets onto a CDN such as S3 / CloudFront?
 
 The easy answer here is [`asset_sync`](https://github.com/rumblelabs/asset_sync) a gem available from [Rumble Labs](http://rumblelabs.com/) which deals with syncing your assets to S3 during the deploy process on Heroku.  This simple extends the regular assets precompilation with a sync of your assets.
 
@@ -80,6 +78,6 @@ config.action_mailer.asset_host = ENV["YOUR_S3_BUCKET"]
 
 Note, the mailer settings are for when you are pushing out email containing images and so on.  Those emails need your assets too!
 
-###Updates
+####Updates
 
 This is a living article.  Over time I will add further information as I see the need.  In the meantime feel free to ask questions or add more information, or better still, [fork this document](https://github.com/neilmiddleton/neilmiddleton.github.com) and send me a pull request.

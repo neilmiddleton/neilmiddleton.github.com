@@ -3,10 +3,8 @@ layout: post
 title: Continuous deployment with Heroku
 category: Heroku
 ---
-#Continuous deployment with Heroku
-
 One of the current trends in the agile world is that of deploy soon, deploy fast and deploy
-often.  The idea here is that code should not be sitting still for long. 
+often.  The idea here is that code should not be sitting still for long.
 Your developers should be coding a feature, and getting it out to the
 world as soon as possible to you're able to gain feedback on that
 feature and iterate as you feel the need to.  There's a number of things
@@ -22,7 +20,7 @@ deployment into a particular environment, be it staging or production,
 and thus removing the need for someone to have to step in and carry out
 what should be a pretty much 100% automatable task.
 
-##Are you insane?
+###Are you insane?
 
 But what are the benefits of continous deployment?  Well, for starters
 as a developer, you know that if the commit you are about to make is
@@ -37,7 +35,7 @@ bit as they are developed (as your coding and deploying continuously you
 have to develop features this way, unless you want to not commit and
 integrate for ages).  This leads you to develop features in a more of an
 iterable fashion, but also allows you to get feedback on the parts you
-have deployed before you've finished building the rest. 
+have deployed before you've finished building the rest.
 
 Some people
 would argue that feature branches are the order of the day here, taking
@@ -50,7 +48,7 @@ you need to consider later on down the line.
 So, how can we manage this with [Heroku](http://heroku.com)?  Well, luckily there's a very
 simple way.
 
-##Continuous deployment with Git
+###Continuous deployment with Git
 
 In order to host your application on Heroku, Heroku require you to
 provide your codebase via the Git source control system.  Anything that
@@ -72,7 +70,7 @@ So how to we mitigate this risk?  How can we ensure that the code we are
 automatically deploying passes all of our carefully thought out tests
 without issue?
 
-##Tddium
+###Tddium
 
 Enter the Heroku addon, [Tddium](https://addons.heroku.com/tddium) stage left. Tddium is
 essentially the continuous integration version of Heroku's hosting
@@ -84,7 +82,7 @@ more you're doing it in an environment that's detached from your local
 workstation, so no deep down configuration or software installation that might
 make your suite pass locally are around to mess things up.
 
-Once you have this up and running you know your codebase is golden, 
+Once you have this up and running you know your codebase is golden,
 how do we deploy?  Well, there's a couple of ways.  Firstly, Tddium will
 let you setup a git URL that will be pushed to on a successful suite
 pass.  By entering your Heroku Git URL here Tddium will automatically
@@ -98,7 +96,7 @@ instead.
 src="http://www.youtube.com/embed/NiMa4Qhv3QE" frameborder="0"
 allowfullscreen></iframe>
 
-##Smoooth
+###Smoooth
 
 At the end of setting this up, you're now able to develop code, testing
 it locally, and push that code into your Git repo, knowing that there is
@@ -110,9 +108,8 @@ Whilst continuous deployment initially might sound quite scary there are
 numerous benefits to be had.  You need to take more care with the
 commits you make, and you have to consider how you develop your code.
 You also need to consider the resilience of your deploy process and what
-happens should deploys not go as cleanly as desired.  
+happens should deploys not go as cleanly as desired.
 
-But that's all
-good right?
+But that's all good right?
 
 

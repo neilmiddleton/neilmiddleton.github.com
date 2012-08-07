@@ -2,10 +2,6 @@
 layout: post
 title: Internationalisation with Rails 3
 ---
-#Internationalisation with Rails 3
-
-Over the past few weeks I've been spending time working on applications which require internationalisation.  It's something I've done before, but not to the level that the requirements for this current project requested.  Therefore I've had to do a certain amount of figuring out and prototyping to figure out some of the edge cases, but I think now I have a relatively good pattern that can be repeated further down the line on other projects.
-
 First of all though, what is Internationalisation (or I18n)?  Well, firstly it's part of two larger topics, that and Localisation (L11n).  So what's the difference?  Well to quote [wikipedia](http://en.wikipedia.org/wiki/Internationalization_and_localization):
 
 ### Localisation:

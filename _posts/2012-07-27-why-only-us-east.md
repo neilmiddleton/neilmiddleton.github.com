@@ -3,8 +3,6 @@ layout: post
 title: Multi-provider PaaSes - what exactly do they offer?
 category: Heroku
 ---
-#Multi-provider PaaSes - what exactly do they offer?
-
 Recently there has been a vast array of Platform-as-a-service providers popping up all over the place offering a vast array of feature sets, and an even wider array of pricing strategies.
 
 One thing which has become prominent is that these new PaaS providers are using the number of different infrastructure choices that they offer as a selling point.  For instance AppFog will proudly tell you that you can use them to deploy your application to HP Cloud, Rackspace, AWS US East, Ireland, Singapore, and more….  In fact, they are so proud of this fact, it's front and center on their homepage.
