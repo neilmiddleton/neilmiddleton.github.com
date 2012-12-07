@@ -2,12 +2,40 @@
 layout: default
 title: "Neil Middleton"
 ---
-
 <section class="content">
+
+  <div class="bio">
+    <p class="intro">Hello, </p>
+
+    <p>My name is Neil Middleton</p>
+
+    <p>I'm a Rails web apps developer from the UK, currently working for
+    an agency in Surrey called <a href="http://www.kyan.com"
+      target="_blank">Kyan</a>.</p>
+
+    <p>I'm a big fan of <a href="http://www.heroku.com"
+      target="_blank">Heroku</a>, and am currently working on
+    the as yet unreleased book 'Heroku' for O'Reilly (<a target="_blank"
+      href="http://www.amazon.co.uk/gp/product/144934139X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=144934139X&linkCode=as2&tag=neilmidd-21">preorder</a> on Amazon)</p>
+
+    <p>I'm a massive fan of keeping things simple, straight-forward an
+    bullshit free</p>
+  </div>
+
   <ul class="listing">
     {% for post in site.posts %}
+      {% unless post.next %}
+        <h3>{{ post.date | date: '%Y' }}</h3>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h3>{{ post.date | date: '%Y' }}</h3>
+        {% endif %}
+      {% endunless %}
+
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> <span>{{ post.date | date: "%B %e, %Y" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>

@@ -23,32 +23,37 @@
 	</script>
 </head>
 <body>
+  <div class="container">
 
-  <section class="header">
-    <a href="/">
-      <img src="http://www.gravatar.com/avatar/f8b75a99bfbe0583cc9b6ca57c899031.jpg?s=75" height="75" width="75" class="avatar" />
-    </a>
-
-    <section class="name">
+    <section class="header">
       <a href="/">
-        <span id="neil">@neilmiddleton</span>
+        <img src="http://www.gravatar.com/avatar/f8b75a99bfbe0583cc9b6ca57c899031.jpg?s=75" height="75" width="75" class="avatar" />
       </a>
+
+      <section class="name">
+        <a href="/">
+          <span id="neil">@neilmiddleton</span>
+        </a>
+      </section>
+
+      <section class="meta">
+        <a href="articles" id="articles">
+          Articles
+        </a>
+        <a href="https://github.com/neilmiddleton" id="github">
+          Github
+        </a>
+        <a href="https://twitter.com/neilmiddleton" id="twitter">
+          Twitter
+        </a>
+      </section>
     </section>
 
-    <section class="meta">
-      <a href="https://github.com/neilmiddleton" id="github">
-        Github
-      </a>
-      <a href="https://twitter.com/neilmiddleton" id="twitter">
-        Twitter
-      </a>
-    </section>
-  </section>
+    {{ content }}
 
-  {{ content }}
-
-  <footer>
-    neil {at} neilmiddleton {dot} com
-  </footer>
+    <footer>
+      neil {at} neilmiddleton {dot} com
+    </footer>
+  </div>
 </body>
 </html>
