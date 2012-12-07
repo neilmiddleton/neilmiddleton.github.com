@@ -118,6 +118,10 @@ article .highlight {
   padding: 20px;
 }
 
+.highlight pre {
+  word-wrap: break-word;
+  max-width: 600px;
+}
 .content .listing li {
   list-style: none;
 }
