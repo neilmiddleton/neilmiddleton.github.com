@@ -9,7 +9,7 @@ It all started back in May/June time when I was approached by a good friend at [
 
 Shit.
 
-=== Getting started
+## Getting started
 
 The first problem I found when starting out on this project was the getting started itself.  A technical book is such a strange beast - there's no real start to a subject such as Heroku, nor any end, so how do you approach it?  If I were writing some sort of grotty novel then there's a clear approach with introducing characters, developing them and then climaxing with a, er, climax - so how do I approach this with a technical book?
 
@@ -21,7 +21,7 @@ So, where to start?
 
 Well, with this sort of book you end up with a massive list of excerpts that you think should be in.  You want to talk about X, Y and Z, but with a bit of A, B and C thrown in for good measure.  Only by dumping everything on paper are you able to get down to the business of making sense of it all and the writing itself.  There are so may corners to a complex topic such as this that structure is the only place to start thinking about what to write and how.  Only by having the skeleton of what you are writing can you move forwards - much like writing code.
 
-=== Toolchains
+## Toolchains
 
 So, what do I write with?  Pen and paper? Some sort of ye olde clicky clack typewriter and a pipe, so I can discard pages like that [guy at the end of the A-Team](http://youtu.be/4ohE2e7le-Y)?. Or Vim, which I use each and every day to write code?  Actually, I settled for [IA Writer](http://www.iawriter.com/) - a no-nonsense, zero fluff text editor that lets you think purely about the content at hand.  
 
@@ -29,13 +29,13 @@ No crap, no formatting, no flashy bits - just words.
 
 Which at this point leads me onto formatting and structure, which all books need to make any sense.  In the print industry, and especially O'Reilly, books are generally written in some sort of internal toolchain supported markup.  This means that a publisher can drop a load of markup into one end of a pipe and get a formatted printed book / PDF / EPub / Mobi book out the other end.  This obviously saves some significant effort on one side but can introduce some pain for the author at the other end.
 
-Therefore, you're limited to writing in a certain way.  Markdown (which I prefer, and what this very article is written in) is not generally supported as it's not as feature complete as you need for most of the conventions in a full-blown book.  This leaves you with a couple of common options:- Asciidoc, a sort of Markdown on steroids, and Docbook, writing in pure XML.
+Therefore, you're limited to writing in a certain way.  Markdown (which I prefer, and what this very article is written in) is not generally supported as it's not as feature complete as you need for most of the conventions in a full-blown book.  This leaves you with a couple of common options:- [Asciidoc](http://www.methods.co.nz/asciidoc/), a sort of [Markdown](http://daringfireball.net/projects/markdown/) on steroids, and [Docbook](http://www.docbook.org/), writing in pure XML.
 
 Obviously I went with Asciidoc.
 
 Pushing this all into Git let's me push and publish out a new PDF to see how my text looks, and means that my editor can get down to looking at content as it arrives.  Without the familiarity of Git, I'd be lost.
 
-=== Changes
+### Changes
 
 So, we were writing, and chapters were starting to take shape and things were going well.
 
@@ -47,7 +47,7 @@ This is where bringing in a co-author (Richard Schneeman from Heroku) is a massi
 
 Having a co-author is, in my eyes, essential when writing a technical book.
 
-=== But why write a book, it sounds hard?
+### But why write a book, it sounds hard?
 
 First off, you should never write a book for the money.  I've no idea how much money I might make from this work, or even how many copies I might sell, but I do know that even with a thousand copies sold the per rate hour is appalling.  
 
@@ -61,7 +61,7 @@ Every topic has corners that people will avoid, either because they don't need t
 
 You may start a project thinking that you're proficient in any given subject, but I'll tell you now, writing a book about it will make you feel stupid in comparison with how much knowledge you'll need to cover off in order to produce a topic that people will be willing to spend real money on.
 
-=== So, get writing
+### So, get writing
 
 The act of writing itself is not hard.
 
@@ -80,5 +80,6 @@ Developers need to learn constantly.  If you fail to keep learning you will be l
 Everyone benefits from writing, but most of all the author.  So do it.  
 
 Write something - it's challenging, but rewarding.
+
 
 *Incidentally, if you're interested in reading the end product, you can pre-order it now on [Amazon](http://www.amazon.co.uk/gp/product/144934139X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=144934139X&linkCode=as2&tag=neilmidd-21)*
