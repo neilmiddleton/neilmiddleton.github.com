@@ -80,3 +80,5 @@ Developers need to learn constantly.  If you fail to keep learning you will be l
 Everyone benefits from writing, but most of all the author.  So do it.  
 
 Write something - it's challenging, but rewarding.
+
+*Incidentally, if you're interested in reading the end product, you can pre-order it now on [Amazon](http://www.amazon.co.uk/gp/product/144934139X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=144934139X&linkCode=as2&tag=neilmidd-21)*
