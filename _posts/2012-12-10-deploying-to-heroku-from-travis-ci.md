@@ -165,4 +165,7 @@ So, we've got everything setup and we should have a well oiled
 continuous deployment machine centered around Travis CI and Heroku. What's more, now it's setup and working, we can pretty much forget about
 ever having to deploy manually again.
 
-
+*The 'Heroku' book, published by O'Reilly, is [available for
+pre-order on
+Amazon](http://www.amazon.co.uk/gp/product/144934139X/ref=as_li_tf_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=144934139X&linkCode=as2&tag=neilmidd-21)
+now*
