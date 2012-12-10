@@ -14,7 +14,7 @@ html, body {
 
 body {
   color: #000;
-  font-family: Georgia, serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
@@ -42,6 +42,7 @@ a {
 
 .header {
   height: 80px;
+  margin-bottom: 10px;
 }
 
 .header a img.avatar {
@@ -51,7 +52,9 @@ a {
 }
 
 .header .meta {
-  padding-left: 93px
+  margin-left: 93px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
 .header .meta a {
@@ -74,7 +77,7 @@ a {
 }
 
 .bio {
-  margin: 20px 0 70px 0;
+  margin: 20px 0 50px 0;
 }
 .bio p {
   margin: 20px 0;
@@ -88,7 +91,6 @@ a {
 
 .content, article {
   margin-left: 107px;
-  width: 650px;
 }
 
 article p {
