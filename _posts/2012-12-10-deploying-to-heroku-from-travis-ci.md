@@ -129,7 +129,7 @@ things are working as they should.  Tools such as
 [Campfire](http://campfirenow.com/) are ideal for
 this sort of thing and are easily added (for
 [Travis](http://about.travis-ci.org/docs/user/notifications/), and
-[Heroku](https://addons.heroku.com/deployhooks).
+[Heroku](https://addons.heroku.com/deployhooks)).
 
 Now, this doesn't limit what you can do with this script.  For instance,
 you may have multiple environments and branches in play and want to
