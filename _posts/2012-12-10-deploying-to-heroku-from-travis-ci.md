@@ -89,14 +89,24 @@ $ travis encrypt your_github_username/your_github_repo \
   HEROKU_API_KEY=<your_heroku_key>
 {% endhighlight %}
 
-Take a note of this output as we'll need it in a minute.  So, that's
-the security dealt with, now let's make the magic happen:
+So, now we have our encrypted key, let's tell Travis about it by adding
+it to our `.travis.yml`:
+
+{% highlight yaml %}
+env:
+  global:
+    - secure: <your_really_long_encrypted_key>
+{% endhighlight %}
+
+So you know, Travis takes this long key at runtime and applies the
+contents to the environment, hence why this works.
+
+Now let's make the magic happen:
 
 {% highlight yaml %}
 after_script:
   - gem install heroku
   - git remote add heroku git@heroku.com:YOUR_HEROKU_APP.git
-  - export HEROKU_API_KEY=YOUR_ENCRYPTED_HEROKU_API_KEY_HERE
   - echo "Host heroku.com" >> ~/.ssh/config
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
   - echo "   CheckHostIP no" >> ~/.ssh/config
