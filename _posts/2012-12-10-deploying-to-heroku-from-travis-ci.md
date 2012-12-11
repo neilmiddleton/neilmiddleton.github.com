@@ -101,7 +101,18 @@ env:
 So you know, Travis takes this long key at runtime and applies the
 contents to the environment, hence why this works.
 
-Now let's make the magic happen:
+## Doing the deploy
+
+At this point, we have a choice as there is two ways of acheiving this
+next step.  Which you decide to use is up to you but both have their
+benefits.  One is the more 'standard' route of using Git to push into
+Heroku, the other is to upload a pre-compiled slug instead.
+
+### Pushing your application with Git
+
+So, we've decided to use Git which means that we need to deal with SSH
+and some other fun.  By adding the following to our `.travis.yml` we can
+acheive this:
 
 {% highlight yaml %}
 after_script:
@@ -131,10 +142,51 @@ this sort of thing and are easily added (for
 [Travis](http://about.travis-ci.org/docs/user/notifications/), and
 [Heroku](https://addons.heroku.com/deployhooks)).
 
-Now, this doesn't limit what you can do with this script.  For instance,
+### Pushing compiled slugs up to Heroku
+
+This method takes care of the pre-compilation of your application on
+Travis rather than letting the Heroku Git system take care of it.  By
+using this method we don't need to worry so much about SSH as we're
+authenticating with our API key that we set up earlier.
+
+In order to make this possible however, we are going to use a third
+party library called [Heroku
+Anvil](https://github.com/ddollar/heroku-anvil) by [David
+Dollar](http://david.dollar.io/), who works at
+Heroku.  This isn't a Heroku supported library as such, but is the next
+best thing.  What Anvil does is provide an alternate build process to
+the one that you get with Git, and lets you carry out a load of tasks
+locally as opposed to on the Heroku stack itself.
+
+In order to get this working we need an after script like this:
+
+{% highlight yaml %}
+after_script:
+  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  - heroku plugins:install https://github.com/ddollar/heroku-anvil
+  - heroku build -r <YOUR_HEROKU_APP_NAME>  -b
+    https://github.com/heroku/heroku-buildpack-ruby.git
+{% endhighlight %}
+
+Now what this code does is relatively simple.  First it installs the
+Heroku toolbelt, installs Anvil into that as a plugin and then fires off
+the build process.  At this point we're telling Anvil where our live
+application is so that the push goes to the right place.
+
+Note we're having to declare the buildpack here.  I found in testing
+that this was a required option.  Buildpacks are Heroku's way of
+identifying your code for execution, so you'll need to locate the right
+buildpack for your project and add it to this script.  All buildpacks
+are found in the [Heroku Github account](http://www.github.com/heroku)
+
+### Wrapping it up
+
+Now, neither of these examples are exhaustive representations of what
+you can with these scripts.  For instance,
 you may have multiple environments and branches in play and want to
 setup continuous deployment for each and every branch with a matching
-environment.  Well, Travis provides a selection of environment variables
+environment.  You'll need to consider excluding CI builds carried out
+against Pull requests, or other Rubies for instance.  Well, Travis provides a selection of environment variables
 that you can use to enhance the above script and make intelligent
 changes to things like your Heroku app name, or where your code [should
 be pushing to](/deploying-topic-branches-to-heroku/):
