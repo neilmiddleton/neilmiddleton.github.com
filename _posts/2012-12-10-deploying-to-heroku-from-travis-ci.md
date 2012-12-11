@@ -116,7 +116,7 @@ acheive this:
 
 {% highlight yaml %}
 after_script:
-  - gem install heroku
+  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - git remote add heroku git@heroku.com:YOUR_HEROKU_APP.git
   - echo "Host heroku.com" >> ~/.ssh/config
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
