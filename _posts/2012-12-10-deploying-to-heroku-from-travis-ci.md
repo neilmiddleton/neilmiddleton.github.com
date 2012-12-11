@@ -209,6 +209,8 @@ Therefore we can now do clever things such as:
 {% highlight yaml %}
 after_script:
   - gem install heroku
+  - if [[ "$TRAVIS_PULL_REQUEST" == "true" ]]; then echo "This is a
+      pull request. No deployment will be done."; exit 0; fi
   - if [[ "$TRAVIS_BRANCH" == "master" ]]; then git remote add heroku
       git@heroku.com:YOUR_PRODUCTION_HEROKU_APP.git; fi
   - if [[ "$TRAVIS_BRANCH" == "staging" ]]; then git remote add heroku
