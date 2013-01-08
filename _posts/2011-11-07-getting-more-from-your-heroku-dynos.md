@@ -31,7 +31,12 @@ worker_processes 4
 timeout 30
 {% endhighlight %}
 
-Note that you don't want to push the worker_processes too high or you'll start hitting the memory limits on the dyno.  Only by playing with the amount and testing will you find that happy place for your application.
+Note that you don't want to push the worker_processes too high or you'll start
+hitting the memory limits on the dyno.  Only by playing with the amount and testing will you find that happy place for your application.
+A common symptom of too many workers is the Heroku errors [R14][] and [R15][].
+Generally speaking, if you're seeing R14's in your logs then dropping the number
+of workers by 1 will alleviate the problem.  Only by repeated testing and
+deploying will you be able to determine the ideal number for your application.
 
 Once you've done the above, you need to tell your Procfile how to spin up on Unicorn:
 
@@ -78,3 +83,5 @@ just over a million, all for the same money.
 
 [Heroku]: http://www.heroku.com
 [Unicorn]: http://unicorn.bogomips.org/
+[R14]: https://devcenter.heroku.com/articles/error-codes#r14-memory-quota-exceeded
+[R15]: https://devcenter.heroku.com/articles/error-codes#r15-memory-quota-vastly-exceeded
