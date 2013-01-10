@@ -72,6 +72,9 @@ without issue?
 
 ###Tddium
 
+*(for information on continuous deployment with TravisCI, please see this
+[post](/deploying-to-heroku-from-travis-ci/))*
+
 Enter the Heroku addon, [Tddium](https://addons.heroku.com/tddium) stage left. Tddium is
 essentially the continuous integration version of Heroku's hosting
 platform.  By simply [setting up
