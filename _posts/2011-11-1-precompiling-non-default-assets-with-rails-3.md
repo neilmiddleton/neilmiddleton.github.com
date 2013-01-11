@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Precompiling non-default assets with Rails 3
+wip: true
 ---
 #Precompiling non-default assets with Rails 3
 I've just been playing with an interesting problem whereby Rails 3 wasn't precompiling assets as I would expect.

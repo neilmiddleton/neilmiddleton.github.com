@@ -2,6 +2,7 @@
 layout: post
 title: Heroku / Asset Pipeline FAQ
 category: Heroku
+wip: true
 ---
 From having a look around on Stackoverflow, it seems that a fair chunk of the questions on there all relate to the new Rails 3.1 Asset Pipeline, a part of Rails which has attracted a relatively large amount of comment and problems.
 

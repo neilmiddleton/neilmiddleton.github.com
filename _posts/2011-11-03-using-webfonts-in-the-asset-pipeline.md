@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Using webfonts in the asset pipeline
+wip: true
 ---
 #Using webfonts in the asset pipeline
 
 Now that we have the asset pipeline, you need to include your fonts in a slightly different way.
 
-All assets inside /app/assets fonts, images, audios, javascripts and stylesheets are included, but to get the appropriate links in your CSS etc you need to use 
+All assets inside /app/assets fonts, images, audios, javascripts and stylesheets are included, but to get the appropriate links in your CSS etc you need to use
 
 {% highlight sass %}
 asset-url("my-webfont.eot", font);

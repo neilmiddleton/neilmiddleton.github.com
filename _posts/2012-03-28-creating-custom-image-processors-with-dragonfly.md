@@ -1,5 +1,6 @@
 ---
 layout: post
+wip: true
 title: Creating custom image processors with Dragonfly
 ---
 Every now and then you come across a project which does things a little different.  The other day I was toying with solving one particular problem, and that is the one of heavily stylised images.  In this particular case, the application I was working on needed to take a user uploaded image, and present it at a pre-defined size, but with a bottletop like shroud around it, essentially making the image round.

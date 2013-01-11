@@ -9,6 +9,10 @@ layout: default
 
   {{ content }}
 
+  {% if page.wip %}
+  {% include wip.html %}
+  {% endif %}
+
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       var disqus_shortname = 'neilmiddleton'; // required: replace example with your forum shortname

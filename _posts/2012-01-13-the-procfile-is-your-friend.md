@@ -2,6 +2,7 @@
 layout: post
 title: The Procfile is your friend
 category: Heroku
+wip: true
 ---
 #The Procfile is your friend
 
@@ -35,7 +36,7 @@ worker: bundle exec rake jobs:work
 
 This example is pretty typical of a Rails application.  It contains the
 web process for the front end, and a worker for [delayed_job](https://github.com/collectiveidea/delayed_job), a
-background job processor.  
+background job processor.
 
 Note the explicit mention of $PORT.  This is
 required because the Heroku stack will explicitly define the port that

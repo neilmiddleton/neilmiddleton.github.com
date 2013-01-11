@@ -99,6 +99,13 @@ blockquote {
   margin-left: 107px;
 }
 
+p.note {
+  padding: 20px;
+  background-color: #f7f6f8;
+  font-size: 0.82em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 article p {
   margin-bottom: 20px;
   line-height: 1.7em;

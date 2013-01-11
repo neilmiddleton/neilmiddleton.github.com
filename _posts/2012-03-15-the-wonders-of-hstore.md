@@ -2,6 +2,7 @@
 layout: post
 title: The wonders of hStore
 category: Heroku
+wip: true
 ---
 #The wonders of hStore
 
@@ -88,14 +89,14 @@ This fills an interesting gap in data modelling such as the scenario raised abov
 
 ### Using it from Rails
 
-But what about using something like Rails to play with this stuff?  Well, you're in luck.  Rails 4 has support for this baked in, or you can add it to Rails 3 now by using the [activerecord-postgres-hstore](https://github.com/softa/activerecord-postgres-hstore) gem that has been made available. 
+But what about using something like Rails to play with this stuff?  Well, you're in luck.  Rails 4 has support for this baked in, or you can add it to Rails 3 now by using the [activerecord-postgres-hstore](https://github.com/softa/activerecord-postgres-hstore) gem that has been made available.
 
 You've now got the ability to do the above quite happily:
 
 {% highlight ruby %}
-Product.create(	:name => "Bosch WAE28166GB Washing Machine", 
-  				:attributes => {'manufacturer' 	=> 'Bosch', 
-								'type' 			=> washing_machine, 
+Product.create(	:name => "Bosch WAE28166GB Washing Machine",
+  				:attributes => {'manufacturer' 	=> 'Bosch',
+								'type' 			=> washing_machine,
 								'capacity' 		=> '6kg',
 								'spinspeed'     => '1400rpm',
        							'energyrating'  => 'A'+

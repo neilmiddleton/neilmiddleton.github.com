@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Internationalisation with Rails 3
+wip: true
 ---
 First of all though, what is Internationalisation (or I18n)?  Well, firstly it's part of two larger topics, that and Localisation (L11n).  So what's the difference?  Well to quote [wikipedia](http://en.wikipedia.org/wiki/Internationalization_and_localization):
 

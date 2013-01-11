@@ -2,6 +2,7 @@
 layout: post
 title: Deploying to Heroku with Travis CI
 category: Heroku
+wip: true
 ---
 
 A while back [I wrote about](/continuous-deployment-with-heroku/) how you can deploy to Heroku 'continuously',

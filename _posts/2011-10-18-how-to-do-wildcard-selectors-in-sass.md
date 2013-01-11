@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to do wildcard selectors with Sass
+wip: true
 ---
 #How to do wildcard selectors with Sass
 
