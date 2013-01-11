@@ -16,19 +16,14 @@ body {
   color: #000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
-  font-size: 120%;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 code {
-  font-size: 95%;
+  font-size: 1em;
   color: #530000;
-}
-
-.listing h3 {
-  font-size: 95%;
 }
 
 a {
@@ -59,6 +54,7 @@ blockquote {
 .header a img.avatar {
   float: left;
   border-radius: 5px;
+  box-shadow: 0px 0px 15px #CCC;
 }
 
 .header .meta {
@@ -88,7 +84,6 @@ blockquote {
 
 .bio {
   margin: 20px 0 50px 0;
-  border-bottom: 1px solid #eee;
 }
 .bio p {
   margin: 20px 0;
