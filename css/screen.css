@@ -24,17 +24,20 @@ body {
 code {
   font-size: 1em;
   color: #530000;
+  padding: 3px 4px;
+  background-color: #F7F7F9;
+  border: 1px solid #E1E1E8;
 }
 
 a {
-  color: #a00;
+  color: #530000;
   text-decoration: none;
 }
 
 blockquote {
   padding-left: 20px;
   font-style: italic;
-  border-left: 1px solid #A00;
+  border-left: 1px solid #530000;
 }
 
 .header {
@@ -43,24 +46,20 @@ blockquote {
   top: 0px;
   left: 0px;
   padding: 15px 0 0 15px;
-  background-color: white;
-}
-
-.header {
-  height: 80px;
-  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
 .header a img.avatar {
   float: left;
   border-radius: 5px;
-  box-shadow: 0px 0px 15px #CCC;
 }
 
 .header .meta {
-  margin-left: 93px;
+  float: right;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  margin: 13px 10px 0 0;
 }
 
 .header .meta a {
@@ -69,21 +68,27 @@ blockquote {
 }
 .header .name {
   display: inline-block;
+  float: left;
 }
 .header .name a {
   float: left;
-  margin: 5px 0 0 15px;
+  margin: 5px 0 0 0;
   color: #000000;
-  font-size: 13px;
-  font-weight: 100;
-  font-size: 30px;
-  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: -1px;
+  font-family: 'Arvo', 'Georgia', serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+#neil > span {
+  font-size:28px;
+}
 
 .bio {
-  margin: 20px 0 50px 0;
+  margin: 20px 0 25px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
 }
 .bio p {
   margin: 20px 0;
@@ -96,14 +101,21 @@ blockquote {
 }
 
 .content, article {
-  margin-left: 107px;
+  margin: 0 15px;
 }
 
 p.note {
-  padding: 20px;
-  background-color: #f7f6f8;
-  font-size: 0.82em;
-  font-family: Helvetica, Arial, sans-serif;
+  background: #F0F5F9;
+  border: 1px solid #D0DBE6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #777;
+  margin: 30px 15px;
+  padding: 10px 20px 10px 20px;
+  letter-spacing: normal;
+  line-height: 1.5em;
+  font-size: 14px;
 }
 
 article p {
@@ -120,7 +132,7 @@ article h2, article h3, article h4 {
   margin-bottom: 20px;
 }
 
-article ul {
+article ul, article ol {
   margin: 0 0 20px 20px;
 }
 
@@ -129,15 +141,27 @@ article > h1 {
 }
 
 article .highlight {
-  margin-bottom: 20px;
-  border: 1px dotted #AAA;
-  padding: 20px;
+  padding: 10px 10px 10px 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  background: #F6F6F6;
 }
 
 .highlight pre {
   word-wrap: break-word;
   max-width: 600px;
 }
+
+.highlight code, .highlight code pre {
+  border: 0;
+  padding: 0
+}
+
 .content .listing li {
   list-style: none;
 }
