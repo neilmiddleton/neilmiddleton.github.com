@@ -6,8 +6,9 @@
    <meta name="author" content="Neil Middleton" />
    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-   <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
    <link rel="alternate" type="application/rss+xml" title="Neil Middleton" href="http://feeds.feedburner.com/neil_middleton" />
+   <script type="text/javascript" src="//use.typekit.net/sgb2rvd.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
    <script type="text/javascript">
 	  var _gaq = _gaq || [];
@@ -22,13 +23,8 @@
 	</script>
 </head>
 <body>
-  <div class="container">
-
-    <section class="header">
-      <!-- <a href="/"> -->
-      <!--   <img src="http://www.gravatar.com/avatar/f8b75a99bfbe0583cc9b6ca57c899031.jpg?s=73" height="71" width="71" class="avatar" /> -->
-      <!-- </a> -->
-
+  <section class="header">
+    <div class="container">
       <section class="name">
         <a href="/">
           <span id="neil"><span>@</span>neilmiddleton</span>
@@ -36,18 +32,22 @@
       </section>
 
       <section class="meta">
-        <a href="/articles" id="articles">
-          Articles
-        </a>
-        <a href="https://github.com/neilmiddleton" id="github">
-          Github
-        </a>
-        <a href="https://twitter.com/neilmiddleton" id="twitter">
-          Twitter
-        </a>
+        <ul>
+          <li>
+            <a href="/articles" id="articles"> Articles </a>
+          </li>
+          <li>
+            <a href="https://github.com/neilmiddleton" id="github"> Github </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/neilmiddleton" id="twitter"> Twitter </a>
+          </li>
+        </ul>
       </section>
-    </section>
+    </div>
+  </section>
 
+  <div class="container">
     {{ content }}
 
     <footer>

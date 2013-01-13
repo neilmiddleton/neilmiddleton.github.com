@@ -12,17 +12,37 @@ html, body {
   height: 100%;
 }
 
+h1, h2, h3 {
+  font-family: "museo-sans",arial,sans-serif;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+
 body {
-  color: #000;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  background-color: #FBFBFB;
+  color: #333;
+  font-family: "museo-sans", Helvetica,Arial,sans-serif;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-size: 18px;
+  font-weight: 300
 }
 
 code {
-  font-size: 1em;
+  font-size: 15px;
   color: #530000;
   padding: 3px 4px;
   background-color: #F7F7F9;
@@ -49,6 +69,9 @@ blockquote {
   border-bottom: 1px solid #eee;
   height: 50px;
   margin-bottom: 40px;
+  background-color: #FFF;
+  box-shadow: #ccc 0 0 5px;
+  font-size: 29px;
 }
 
 .header a img.avatar {
@@ -58,13 +81,26 @@ blockquote {
 
 .header .meta {
   float: right;
-  padding-bottom: 10px;
-  margin: 13px 10px 0 0;
+  margin: 3px 10px 0 0;
 }
 
 .header .meta a {
   margin-right: 20px;
-  font-weight: 500;
+  font-size: 15px;
+}
+.header .meta ul {
+  list-style: none;
+}
+.header .meta li {
+  display: inline-block;
+  margin: 0 3px;
+  font-size: 17px;
+}
+.header .meta li::after {
+  content: ' | ';
+}
+.header .meta li:last-child::after {
+  content: '';
 }
 .header .name {
   display: inline-block;
@@ -75,12 +111,15 @@ blockquote {
   margin: 5px 0 0 0;
   color: #000000;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 29px;
   letter-spacing: -1px;
-  font-family: 'Arvo', 'Georgia', serif;
+  font-family: 'source-sans-pro', 'Arial', serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+.header .date {
+}
+
 #neil > span {
   font-size:28px;
 }
@@ -144,7 +183,7 @@ article .highlight {
   padding: 10px 10px 10px 15px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-bottom: 30px;
 }
 
